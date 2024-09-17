@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Timetable Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>College Timetable Planner</h1>
+    </header>
+    <main>
+        <section id="calendar-section">
+            <h2>Calendar</h2>
+            <input type="date" id="calendar" onchange="updateDate()">
+        </section>
+        <section id="schedule-section">
+            <h2>Manage Schedule</h2>
+            <input type="text" id="schedule-input" placeholder="Add Schedule Item">
+            <input type="text" id="notes-input" placeholder="Add Notes">
+            <button onclick="addScheduleItem()">Add Item</button>
+            <button onclick="clearSchedule()">Clear All</button>
+            <button onclick="saveSchedule()">Save Schedule</button>
+            <ul id="schedule-list"></ul>
+        </section>
+        <section id="saved-schedules-section">
+            <h2>Saved Schedules</h2>
+            <ul id="saved-schedules-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 College Timetable Planner</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
